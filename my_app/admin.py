@@ -5,6 +5,6 @@ from .models import Contact
 # Register your models here.
 
 admin.site.register(Contact)
-# list_displayed=['firstname', 'lastname', 'email']
-# search_fields=['firstname']
-# firstname_hierarchy= 'firstname'
+list_displayed=['firstname', 'lastname', 'email']
+search_fields=['firstname']
+firstname_hierarchy= 'firstname'

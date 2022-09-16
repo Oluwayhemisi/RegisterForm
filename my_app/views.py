@@ -15,5 +15,5 @@ def index(request):
             contact = Contact(firstname=firstname, lastname=lastname, password=password, email=email)
             contact.save()
         else:
-            return HttpResponse(f'1{firstname} 2{lastname} 3{password} 4{email}')
+            return HttpResponse(f'{firstname} {lastname} {password} {email}')
     return render(request, 'index.html')
